@@ -1,0 +1,1 @@
+PS1="\[$(tput setaf 2)\]→ \[$(tput setaf 1)\]\t \[$(tput setaf 10)\]\u@\h:\[$(tput setaf 14)$(tput bold)\]\w\[$(tput sgr0)\] \$ "
