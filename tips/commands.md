@@ -11,7 +11,9 @@
   > "$([command])
 - Proccess substition
   > "<()" | ">()"
+  
   > [command] <([command])
+
   > [command] > >([command])
   
 ## Useful commands
@@ -34,12 +36,15 @@
 - Shell features
   > set ('-' - enable, '+' - disable feature)
 
-
 ## User management
 - /etc/passwd
 - /etc/shadow (sudo)
 - /etc/group
-- add user - useradd -m 
-- change password - passwd
-- manage user - usermod
-- delete user - deluser
+- add user
+  > useradd -m 
+- change password
+  > passwd
+- manage user
+  > usermod
+- delete user
+  > deluser
