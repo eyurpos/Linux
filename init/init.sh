@@ -12,5 +12,5 @@ setaliases(){
 }
 
 setpromt
-setaliease
+setaliases
 reinit
