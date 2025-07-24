@@ -71,3 +71,13 @@ or
 > ssh-copy-id -i [key_path] [user@server]
 - listed in ~/.ssh/authorized_users
 
+## Screen
+> ssh -X - with grafical interface
+
+> sudo apt install screen
+
+> screen - to start
+
+> sreen -list - to list
+
+> screen -x [session_name] - to connect

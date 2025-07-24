@@ -54,14 +54,3 @@ https://linuxconfig.org/mount-remote-ftp-directory-host-locally-into-linux-files
 ## LVM
 
 https://wiki.archlinux.org/title/LVM
-
-## Screen
-> ssh -X - with grafical interface
-
-> sudo apt install screen
-
-> screen - to start
-
-> sreen -list - to list
-
-> screen -x [session_name] - to connect
