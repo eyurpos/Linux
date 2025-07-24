@@ -17,3 +17,7 @@
   > set ('-' - enable, '+' - disable feature)
 - Disk usage
 > du 
+- File transfer remote
+> sftp
+
+> scp [user]@[host]:[source_path] [user]@[host]:[dest_path]
