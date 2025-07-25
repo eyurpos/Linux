@@ -1,21 +1,21 @@
 # Journald tips
 
 - Show all messages matching PATTERN
-> journalctl --grep=PATTERN
+  > journalctl --grep=PATTERN
 
 - Show all messages from this boot
-> journalctl -b
+  > journalctl -b
 
 - Follow new messages
-> journalctl -f
+  > journalctl -f
 
 - Show all messages by a specific executable
-> journalctl /usr/lib/systemd/systemd
+  > journalctl /usr/lib/systemd/systemd
 
 - Show all messages by a specific process
-> journalctl _PID=1
+  > journalctl _PID=1
 
-> journalctl --file /path/to/some/file.journal
+  > journalctl --file /path/to/some/file.journal
 
 ## Links
 https://wiki.archlinux.org/title/Systemd/Journal
