@@ -10,9 +10,9 @@ VM network adapter should be set as bridge to be able to connect from PC to VM.
 - apply reboot
 
 General
-- VM -> Tools -> Networks -> Create New Nat
+<pre>VM -> Tools -> Networks -> Create New Nat</pre>
 For both 
-- VM -> VM machine -> Network -> Nat Network -> Select Nat Network 
+<pre>VM -> VM machine -> Network -> Nat Network -> Select Nat Network </pre>
 
 ## Install server 
 > sudo apt install openssh-client
@@ -20,7 +20,7 @@ For both
 > sudo apt install openssh-server
 
 ## Connect
-> ssh username@your_server_ip -p  - if port is not 22
+> ssh username@your_server_ip -p- if port is not 22
 
 > ssh username@remote_host
 
@@ -30,36 +30,38 @@ For both
 > nano /etc/ssh/sshd_config
 
 ### Change port
-...
-#Port 22
-...
+<pre>#Port 22</pre>
 or
 > sshd -p [port number]
 
 ### Security
-...
+<pre>
 # PermitRootLogin no
 # PasswordAuthentication.  no
-...
+</pre>
 
 ### Keep alive session
-...
+<pre>
 ServerAliveInterval 60
 ServerAliveCountMax 3
-...
+</pre>
 
 > sshd -t - test config
 
 ## Known hosts
 > ~/.ssh/known_hosts
 
-The public keys of the hosts that a user has accessed are kept in the known_hosts file. This is a crucial file that saves the user’s identification to your local machine, ensuring that they are connecting to a real server.
+The public keys of the hosts that a user has accessed are kept in the known_hosts file. 
+This is a crucial file that saves the user’s identification to your local machine, 
+ensuring that they are connecting to a real server.
 
 
 ## Restart
 > sudo systemctl restart sshd
+
 or
 > sudo /etc/init.d/ssh restart
+
 or
 > systemctl daemon-reload
 
@@ -68,8 +70,7 @@ or
 
 > cat ~/.ssh/id_rsa.pub
 
-> ssh-copy-id -i [key_path] [user@server]
-- listed in ~/.ssh/authorized_users
+> ssh-copy-id -i [key_path] [user@server] - listed in ~/.ssh/authorized_users
 
 ## Screen
 > ssh -X - with grafical interface
