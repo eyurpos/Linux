@@ -16,8 +16,8 @@
 - Shell features
   > set ('-' - enable, '+' - disable feature)
 - Disk usage
-> du 
+  > du 
 - File transfer remote
-> sftp
+  > sftp
 
-> scp [user]@[host]:[source_path] [user]@[host]:[dest_path]
+  > scp [user]@[host]:[source_path] [user]@[host]:[dest_path]
